@@ -1,0 +1,391 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+	<title>Page</title>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+	<meta name="Author" content="zhangxiong	">
+	<meta name="Keywords" content="">
+	<meta name="Description" content="">
+
+<script type="text/javascript" src="js/outer.js" charset="utf-8"></script> <!-- for ie -->
+<script type="text/javascript" src="js/public.js" charset="utf-8"></script>
+<link rel="stylesheet" href="css/init.css" type="text/css" />
+<link rel="stylesheet" href="css/index.css" type="text/css" />
+
+</head>
+<body>
+	<div id="container">
+		<!--<div id="header">
+		<form method="GET" action="http://www.baidu.com/s">
+			<div id="search">
+				<input  class="searchinput" type="text" name="wd" value="请输入搜索内容" onfocus="getFocus();" />
+				<input  class="searchbt" type="submit" name="serachBt" value="搜索"/>
+				<div>
+					<input class="searchChoose" type="radio" name="search" value="站内搜索" checked="checked"/>&nbsp;站内搜索
+					<input type="radio" name="search" value="网站搜索" />&nbsp;网站搜索
+				</div>
+			</div>
+		</form>
+			<img src="image/logo.jpg" />
+			<ul class="title">
+				<div id="headTitle">
+					<li><a href="#">首页</a></li>
+					<li><a href="#">英语资料</a></li>
+					<li><a href="#">考研资料</a></li>
+					<li><a href="#">学习软件</a></li>
+					<li><a href="#">图书书籍</a></li>
+					<li><a href="#">学习文摘</a></li>
+					<li><a href="#">学习课件</a></li>
+					<li><a href="#">学习教材</a></li>
+					<li><a href="#">学习论坛</a></li>
+				</div>
+			</ul>
+		</div>-->
+		<header id="site-header">
+    <div class="wrapper">
+        <a href="/" class="logo">
+            <span>websitename</span>
+        </a>
+        <form method="get" action="http://www.baidu.com/s">
+            <input type="text" id="words" name="wd" placeholder="Search">
+        </form>
+        <!--Switch to {language}
+        <nav id="nav-site">
+            <a href="/directory/" title="Browse our software.">Browse</a>
+            <a href="/blog/" title="Read the latest news from the SF HQ.">Blog</a>
+            <a href="/support" title="Contact us for help and feedback.">Help</a>
+        </nav>
+        <nav id="nav-account">
+            
+              <div class="logged_out">
+                <a href="https://sourceforge.net/account/login.php">Log In</a>
+                <span>or</span>
+                <a href="https://sourceforge.net/user/registration">Join</a>
+              </div>
+            
+        </nav>-->
+			<ul class="title" style="clear:both;">
+				<div id="headTitle">
+					<li><a href="#">首页</a></li>
+					<li><a href="#">英语资料</a></li>
+					<li><a href="#">考研资料</a></li>
+					<li><a href="#">学习软件</a></li>
+					<li><a href="#">图书书籍</a></li>
+					<li><a href="#">学习文摘</a></li>
+					<li><a href="#">学习课件</a></li>
+					<li><a href="#">学习教材</a></li>
+					<li><a href="#">学习论坛</a></li>
+				</div>
+			</ul>
+    </div>
+</header>
+
+		<!--begin banner-->
+		<div id="banner" style="clear:both;">
+			<div class="recentNews">
+				<p>&nbsp;</p>
+				<ul>
+					<li><a href="#">IT最新动态展示</a></li><hr/>
+					<li><a href="#">IT最新动态展示</a></li><hr/>
+					<li><a href="#">IT最新动态展示</a></li><hr/>
+					<li><a href="#">最新动态</a></li><hr/>
+					<li><a href="#">最新动态</a></li><hr/>
+					<li><a href="#">最新动态</a></li><hr/>
+				</ul>
+			</div>
+			
+			<div id="flash">
+				<ul id="playimg">
+					<li><a href="#"><img  alt="" src="image/bg.jpg" /></a></li>
+					<li><a href="#"><img  alt="" src="image/logo.jpg" /></a></li>
+					<li><a href="#"><img  alt="" src="image/bg.jpg" /></a></li>
+					<li><a href="#"><img  alt="" src="image/logo.jpg" /></a></li>
+				</ul>
+				<ul id="playbtn">
+					<li class="current">1</li>
+					<li>2</li>
+					<li>3</li>
+					<li>4</li>
+				</ul>
+			</div>
+
+			<div id="recentUpdateRight">最近更新</div>
+			<div class="recentUpdate">
+				<ul>
+					<MARQUEE DIRECTION="UP"  ONMOUSEOVER="this.stop()"					ONMOUSEOUT="this.start()" HEIGHT=170 scrollamount="1px" behavior="scroll">
+					<li><a href="#">最近更新展示</a></li><hr/>
+					<li><a href="#">最近更新展示</a></li><hr/>
+					<li><a href="#">最近更新展示</a></li><hr/>
+					<li><a href="#">最近更新展示</a></li><hr/>
+					<li><a href="#">最近更新展示</a></li><hr/>
+					</MARQUEE>
+				</ul>
+			</div>
+		</div>
+		<!--end banner-->
+		
+		<div id="main">
+			<div class="block">		
+				<div class="mainRight">
+					<div id="recentHotDownload">
+						<ul class="title">
+							<li onmouseover="RecentHotDownloadIn();" onmouseout="RecentHotDownloadOut();">
+								<a href="#">热门下载</font></a></li>
+							<li onmouseover="RecommandHotDownloadIn();" onmouseout="RecommandHotDownloadOut();">
+								<a href="#">推荐下载</a></li>
+							<li>
+								<a href="#">更多>></a></li>
+						</ul>
+					</div>
+					<div id="hotDownload">
+						<p>&nbsp;</p>
+						<ul>
+							<li><a href="#" id="recentHot0">热门下载</a></li><hr/>
+							<li><a href="#" id="recentHot1">热门下载</a></li><hr/>
+							<li><a href="#" id="recentHot2">热门下载</a></li><hr/>
+							<li><a href="#" id="recentHot3">热门下载</a></li><hr/>
+							<li><a href="#" id="recentHot4">热门下载</a></li><hr/>
+							<li><a href="#" id="recentHot5">热门下载</a></li><hr/>
+							<li><a href="#" id="recentHot6">热门下载</a></li><hr/>
+							<li><a href="#" id="recentHot7">热门下载</a></li><hr/>
+							<li><a href="#" id="recentHot8">热门下载</a></li><hr/>
+							<li><a href="#" id="recentHot9">热门下载</a></li><hr/>
+						</ul>
+					</div>
+					</div>
+				<div id="mainBlock">
+					<ul class="title">
+						<li>
+							<a href="#"><font size="3px" color="rgb(36,95,153)">书籍下载</font></a></li>
+						<li onmouseover="EnglishIn();" onmouseout="EnglishOut();">
+							<a href="#">英语</a></li>
+						<li onmouseover="EnglishIn();" onmouseout="EnglishOut();">
+							<a href="#">考研</a></li>
+						<li onmouseover="EnglishIn();" onmouseout="EnglishOut();">
+							<a href="#">计算机</a></li>
+						<li onmouseover="EnglishIn();" onmouseout="EnglishOut();">
+							<a href="#">心理学</a></li>
+						<li onmouseover="EnglishIn();" onmouseout="EnglishOut();">
+							<a href="#">其它>></a></li>
+					</ul>
+					<table width="100%" class="book_new" cellpadding="10">
+						<tr>
+							<td>
+								<a href="http://www.xuexi111.com/yingyv/cihui/60707.html">
+								<img id="englishRowColImg0"	src="http://i-7.vcimg.com/crop/2c2871057d45a3ef4182a6b7bd20aedf57700(100x100)/thumb.jpg" width="105" height="118"  />
+								</a>
+								<br/>
+								<a id="englishRowColText0"
+								href="http://www.xuexi111.com/yingyv/cihui/60707.html" title="《刘毅词汇22000》(VOCABULARY22000)扫描版">《刘毅词汇22000》<br/>(VOCABULARY22000)扫
+								</a>
+							</td>
+							<td>
+								<a href="http://www.xuexi111.com/yingyv/cihui/60707.html">
+								<img id="englishRowColImg1" src="http://i-7.vcimg.com/crop/2c2871057d45a3ef4182a6b7bd20aedf57700(100x100)/thumb.jpg" width="105" height="118"  />
+								</a>
+								<br/>
+								<a id="englishRowColText1" href="http://www.xuexi111.com/yingyv/cihui/60707.html" title="《刘毅词汇22000》(VOCABULARY22000)扫描版">《刘毅词汇22000》<br/>(VOCABULARY22000)扫dsadas
+								</a>
+							</td>
+							<td>
+								<a href="http://www.xuexi111.com/yingyv/cihui/60707.html">
+								<img id="englishRowColImg2" src="http://i-7.vcimg.com/crop/2c2871057d45a3ef4182a6b7bd20aedf57700(100x100)/thumb.jpg" width="105" height="118"  />
+								</a>
+								<br/>
+								<a id="englishRowColText2"
+								href="http://www.xuexi111.com/yingyv/cihui/60707.html" title="《刘毅词汇22000》(VOCABULARY22000)扫描版">《刘毅词汇22000》<br/>(VOCABULARY22000)扫
+								</a>
+							</td>
+							<td>
+								<a href="http://www.xuexi111.com/yingyv/cihui/60707.html">
+								<img id="englishRowColImg3" src="http://i-7.vcimg.com/crop/2c2871057d45a3ef4182a6b7bd20aedf57700(100x100)/thumb.jpg" width="105" height="118"  />
+								</a>
+								<br/>
+								<a id="englishRowColText3"
+								href="http://www.xuexi111.com/yingyv/cihui/60707.html" title="《刘毅词汇22000》(VOCABULARY22000)扫描版">《刘毅词汇22000》<br/>(VOCABULARY22000)扫
+								</a>
+							</td>
+						</tr>
+
+						<tr>
+							<td>
+								<a href="http://www.xuexi111.com/yingyv/cihui/60707.html">
+								<img id="englishRowColImg4" src="http://i-7.vcimg.com/crop/2c2871057d45a3ef4182a6b7bd20aedf57700(100x100)/thumb.jpg" width="105" height="118"  />
+								</a>
+								<br/>
+								<a id="englishRowColText4" href="http://www.xuexi111.com/yingyv/cihui/60707.html" title="《刘毅词汇22000》(VOCABULARY22000)扫描版">《刘毅词汇22000》<br/>(VOCABULARY22000)扫
+								</a>
+							</td>
+							<td>
+								<a href="http://www.xuexi111.com/yingyv/cihui/60707.html">
+								<img id="englishRowColImg5" src="http://i-7.vcimg.com/crop/2c2871057d45a3ef4182a6b7bd20aedf57700(100x100)/thumb.jpg" width="105" height="118"  />
+								</a>
+								<br/>
+								<a id="englishRowColText5" href="http://www.xuexi111.com/yingyv/cihui/60707.html" title="《刘毅词汇22000》(VOCABULARY22000)扫描版">《刘毅词汇22000》<br/>(VOCABULARY22000)扫
+								</a>
+							</td>
+							<td>
+								<a href="http://www.xuexi111.com/yingyv/cihui/60707.html">
+								<img id="englishRowColImg6" src="http://i-7.vcimg.com/crop/2c2871057d45a3ef4182a6b7bd20aedf57700(100x100)/thumb.jpg" width="105" height="118"  />
+								</a>
+								<br/>
+								<a id="englishRowColText6"
+								href="http://www.xuexi111.com/yingyv/cihui/60707.html" title="《刘毅词汇22000》(VOCABULARY22000)扫描版">《刘毅词汇22000》<br/>(VOCABULARY22000)扫
+								</a>
+							</td>
+							<td>
+								<a href="http://www.xuexi111.com/yingyv/cihui/60707.html">
+								<img id="englishRowColImg7" src="http://i-7.vcimg.com/crop/2c2871057d45a3ef4182a6b7bd20aedf57700(100x100)/thumb.jpg" width="105" height="118"  />
+								</a>
+								<br/>
+								<a id="englishRowColText7"
+								href="http://www.xuexi111.com/yingyv/cihui/60707.html" title="《刘毅词汇22000》(VOCABULARY22000)扫描版">《刘毅词汇22000》<br/>(VOCABULARY22000)扫
+								</a>
+							</td>
+						</tr>		
+					 </table>
+			</div>			
+
+		</div>
+			
+		<div class="block">
+				<div class="mainRight">
+					<div id="recentHotDownload">
+						<ul class="title">
+							<li onmouseover="EnglishIn();" onmouseout="EnglishOut();">
+								<a href="#">热门下载</font></a></li>
+							<li onmouseover="EnglishIn();" onmouseout="EnglishOut();">
+								<a href="#">推荐下载</a></li>
+							<li onmouseover="EnglishIn();" onmouseout="EnglishOut();">
+								<a href="#">更多>></a></li>
+						</ul>
+					</div>
+						<div id="hotDownload">
+							<p>&nbsp;</p>
+							<ul>
+								<li><a href="#">热门下载</a></li><hr/>
+								<li><a href="#">热门下载</a></li><hr/>
+								<li><a href="#">热门下载</a></li><hr/>
+								<li><a href="#">热门下载</a></li><hr/>
+								<li><a href="#">热门下载</a></li><hr/>
+								<li><a href="#">热门下载</a></li><hr/>
+								<li><a href="#">热门下载</a></li><hr/>
+								<li><a href="#">热门下载</a></li><hr/>
+								<li><a href="#">热门下载</a></li><hr/>
+								<li><a href="#">热门下载</a></li><hr/>
+							</ul>
+						</div>
+				</div>
+				<div id="mainBlock">
+					<ul class="title">
+						<li><a href="#"><font size="3px" color="rgb(36,95,153)">视频下载</font></a></li>
+						<li><a href="#">英语</a></li>
+						<li><a href="#">考研</a></li>
+						<li><a href="#">计算机</a></li>
+						<li><a href="#">心理学</a></li>
+						<li><a href="#">经济管理</a></li>
+					</ul>
+					<table width="100%" class="book_new" cellpadding="10">		      
+						<tr>
+							<td>
+							<a href="http://www.xuexi111.com/yingyv/cihui/60707.html"><img src="http://i-7.vcimg.com/crop/2c2871057d45a3ef4182a6b7bd20aedf57700(100x100)/thumb.jpg" width="105" height="118"  /></a><br/><a href="http://www.xuexi111.com/yingyv/cihui/60707.html" title="《刘毅词汇22000》(VOCABULARY22000)扫描版">《刘毅词汇22000》<br/>(VOCABULARY22000)扫</a>
+							</td>
+							<td>
+							<a href="http://www.xuexi111.com/yingyv/cihui/60707.html"><img src="http://i-7.vcimg.com/crop/2c2871057d45a3ef4182a6b7bd20aedf57700(100x100)/thumb.jpg" width="105" height="118"  /></a><br/><a href="http://www.xuexi111.com/yingyv/cihui/60707.html" title="《刘毅词汇22000》(VOCABULARY22000)扫描版">《刘毅词汇22000》<br/>(VOCABULARY22000)扫</a>
+							</td>
+							<td>
+							<a href="http://www.xuexi111.com/yingyv/cihui/60707.html"><img src="http://i-7.vcimg.com/crop/2c2871057d45a3ef4182a6b7bd20aedf57700(100x100)/thumb.jpg" width="105" height="118"  /></a><br/><a href="http://www.xuexi111.com/yingyv/cihui/60707.html" title="《刘毅词汇22000》(VOCABULARY22000)扫描版">《刘毅词汇22000》<br/>(VOCABULARY22000)扫</a>
+							</td>
+							<td>
+							<a href="http://www.xuexi111.com/yingyv/cihui/60707.html"><img src="http://i-7.vcimg.com/crop/2c2871057d45a3ef4182a6b7bd20aedf57700(100x100)/thumb.jpg" width="105" height="118"  /></a><br/><a href="http://www.xuexi111.com/yingyv/cihui/60707.html" title="《刘毅词汇22000》(VOCABULARY22000)扫描版">《刘毅词汇22000》<br/>(VOCABULARY22000)扫</a>
+							</td>
+						</tr>
+
+						<tr>
+							<td>
+							<a href="http://www.xuexi111.com/yingyv/cihui/60707.html"><img src="http://i-7.vcimg.com/crop/2c2871057d45a3ef4182a6b7bd20aedf57700(100x100)/thumb.jpg" width="105" height="118"  /></a><br/><a href="http://www.xuexi111.com/yingyv/cihui/60707.html" title="《刘毅词汇22000》(VOCABULARY22000)扫描版">《刘毅词汇22000》<br/>(VOCABULARY22000)扫</a>
+							</td>
+							<td>
+							<a href="http://www.xuexi111.com/yingyv/cihui/60707.html"><img src="http://i-7.vcimg.com/crop/2c2871057d45a3ef4182a6b7bd20aedf57700(100x100)/thumb.jpg" width="105" height="118"  /></a><br/><a href="http://www.xuexi111.com/yingyv/cihui/60707.html" title="《刘毅词汇22000》(VOCABULARY22000)扫描版">《刘毅词汇22000》<br/>(VOCABULARY22000)扫</a>
+							</td>
+							<td>
+							<a href="http://www.xuexi111.com/yingyv/cihui/60707.html"><img src="http://i-7.vcimg.com/crop/2c2871057d45a3ef4182a6b7bd20aedf57700(100x100)/thumb.jpg" width="105" height="118"  /></a><br/><a href="http://www.xuexi111.com/yingyv/cihui/60707.html" title="《刘毅词汇22000》(VOCABULARY22000)扫描版">《刘毅词汇22000》<br/>(VOCABULARY22000)扫</a>
+							</td>
+							<td>
+							<a href="http://www.xuexi111.com/yingyv/cihui/60707.html"><img src="http://i-7.vcimg.com/crop/2c2871057d45a3ef4182a6b7bd20aedf57700(100x100)/thumb.jpg" width="105" height="118"  /></a><br/><a href="http://www.xuexi111.com/yingyv/cihui/60707.html" title="《刘毅词汇22000》(VOCABULARY22000)扫描版">《刘毅词汇22000》<br/>(VOCABULARY22000)扫</a>
+							</td>
+						</tr>		
+					 </table>
+			</div>			
+
+		</div>
+		<div class="block">
+				<div class="mainRight">
+					<div id="recentHotDownload">
+						<ul class="title">
+							<li onmouseover="EnglishIn();" onmouseout="EnglishOut();">
+								<a href="#">热门下载</font></a></li>
+							<li onmouseover="EnglishIn();" onmouseout="EnglishOut();">
+								<a href="#">推荐下载</a></li>
+							<li onmouseover="EnglishIn();" onmouseout="EnglishOut();">
+								<a href="#">更多>></a></li>
+						</ul>
+					</div>
+					<div id="hotDownload">
+						<p>&nbsp;</p>
+						<ul>
+							<li><a href="#">热门下载</a></li><hr/>
+							<li><a href="#">热门下载</a></li><hr/>
+							<li><a href="#">热门下载</a></li><hr/>
+							<li><a href="#">热门下载</a></li><hr/>
+							<li><a href="#">热门下载</a></li><hr/>
+							<li><a href="#">热门下载</a></li><hr/>
+							<li><a href="#">热门下载</a></li><hr/>
+							<li><a href="#">热门下载</a></li><hr/>
+							<li><a href="#">热门下载</a></li><hr/>
+							<li><a href="#">热门下载</a></li><hr/>
+						</ul>
+					</div>
+				</div>
+				<div id="mainBlock">
+					<ul class="title">
+						<li><a href="#"><font size="3px" color="rgb(36,95,153)">软件下载</font></a></li>
+						<li><a href="#">英语</a></li>
+						<li><a href="#">考研</a></li>
+						<li><a href="#">计算机</a></li>
+						<li><a href="#">心理学</a></li>
+						<li><a href="#">经济管理</a></li>
+					</ul>
+					<table width="100%" class="book_new">	      
+						<tr>
+							<td><a href="http://www.xuexi111.com/yingyv/kouyv/60923.html"><img src="http://i-7.vcimg.com/crop/ccbc68bee1a9b1174f18cc5618fcb0df10161(100x100)/thumb.jpg" width="105" height="118"  /></a><br/><a href="http://www.xuexi111.com/yingyv/kouyv/60923.html" title="《NBC夜间新闻(2013-1季)》(NBC Nightly News)NBC美国新闻资源帖~2013年转到此贴更新-更新到2013年1月6日ET">《NBC夜间新闻(2013-1季)》(NBC Nightl</a></td>
+
+							<td><a href="http://www.xuexi111.com/yingyv/cihui/60707.html"><img src="http://i-7.vcimg.com/crop/2c2871057d45a3ef4182a6b7bd20aedf57700(100x100)/thumb.jpg" width="105" height="118"  /></a><br/><a href="http://www.xuexi111.com/yingyv/cihui/60707.html" title="《刘毅词汇22000》(VOCABULARY22000)扫描版">《刘毅词汇22000》(VOCABULARY22000)扫</a></td>
+
+							<td><a href="http://www.xuexi111.com/yingyv/cihui/60636.html"><img src="http://i-7.vcimg.com/crop/8636c6c445df24838e51cfd57735ddd426555(100x100)/thumb.jpg" width="105" height="118"  /></a><br/><a href="http://www.xuexi111.com/yingyv/cihui/60636.html" title="《英语常用词疑难用法手册》扫描版">《英语常用词疑难用法手册》扫描版</a></td>
+
+							<td><a href="http://www.xuexi111.com/yingyv/yuedu/60641.html"><img src="http://i-7.vcimg.com/crop/e1be99bd98a88567958b4b3523bcea6f31436(100x100)/thumb.jpg" width="105" height="118"  /></a><br/><a href="http://www.xuexi111.com/yingyv/yuedu/60641.html" title="《英汉对照:每天读点英文故事会全集（每天读点英文，每天英语都在进步）》扫描版">《英汉对照:每天读点英文故事会全集（每</a></td>
+						</tr>
+
+						<tr>
+							<td><a href="http://www.xuexi111.com/yingyv/kouyv/60642.html"><img src="http://i-7.vcimg.com/crop/cec49212f55368b23a8492a31aeef9c729734(100x100)/thumb.jpg" width="105" height="118"  /></a><br/><a href="http://www.xuexi111.com/yingyv/kouyv/60642.html" title="《朗文英语口语和笔语语法(语言学文库)》扫描版">《朗文英语口语和笔语语法(语言学文库)</a></td>
+
+							<td><a href="http://www.xuexi111.com/yingyv/cihui/60643.html"><img src="http://i-7.vcimg.com/crop/e925bde0ccecbcf9e17e170a86ea52bc48108(100x100)/thumb.jpg" width="105" height="118"  /></a><br/><a href="http://www.xuexi111.com/yingyv/cihui/60643.html" title="《朗文常用英文词根词典》扫描版">《朗文常用英文词根词典》扫描版</a></td>
+
+							<td><a href="http://www.xuexi111.com/yingyv/cihui/60646.html"><img src="http://i-7.vcimg.com/crop/2b08c65ebdc4707867bc755a9cff875384607(100x100)/thumb.jpg" width="105" height="118"  /></a><br/><a href="http://www.xuexi111.com/yingyv/cihui/60646.html" title="《单词寻根记忆魔法--新东方明星主讲刘一男揭秘单词前世今生》扫描版">《单词寻根记忆魔法--新东方明星主讲刘</a></td>
+
+							<td><a href="http://www.xuexi111.com/yingyv/fanyi/60653.html"><img src="http://i-7.vcimg.com/crop/17fd69c73da0fb1013d1144bb22f695e62609(100x100)/thumb.jpg" width="105" height="118"  /></a><br/><a href="http://www.xuexi111.com/yingyv/fanyi/60653.html" title="《口译实例与技巧》扫描版">《口译实例与技巧》扫描版</a></td>
+						</tr>		 
+				 </table>
+				</div>			
+		</div>
+		<div id="footer">
+				学习资料库，由广大资源爱好者通过共享互助而共享各种学习资料，大家可以免费下载学习使用，但学习资料库无法保证所共享<br/>
+				资料的完整性和合理性，如果有资料对您的合法权益造成侵害，请立即联系我们处理<br/>
+		</div>
+	</div>
+</body>
+<!-- JiaThis Button BEGIN -->
+<script type="text/javascript" src="http://v3.jiathis.com/code/jiathis_r.js?uid=1350829171869172&move=0&amp;btn=r3.gif" charset="utf-8"></script>
+<!-- JiaThis Button END -->
+</html>
