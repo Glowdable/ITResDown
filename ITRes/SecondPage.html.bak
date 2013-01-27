@@ -1,0 +1,252 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+	<title>Page</title>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+	<meta name="Author" content="zhangxiong	">
+	<meta name="Keywords" content="">
+	<meta name="Description" content="">
+
+<script type="text/javascript" src="js/outer.js" charset="utf-8"></script> <!-- for ie -->
+<script type="text/javascript" src="js/public.js" charset="utf-8"></script>
+<style type="text/css">
+a.serif{font-family:"Times New Roman",Georgia,Serif}
+a.sansserif{font-family:Arial,Verdana,Sans-serif}
+</style>
+<link rel="stylesheet" href="css/init.css" type="text/css" />
+<link rel="stylesheet" href="css/index.css" type="text/css" />
+
+</head>
+<body>
+	<div id="container">
+		<!--<div id="header">
+		<form method="GET" action="http://www.baidu.com/s">
+			<div id="search">
+				<input  class="searchinput" type="text" name="wd" value="请输入搜索内容" onfocus="getFocus();" />
+				<input  class="searchbt" type="submit" name="serachBt" value="搜索"/>
+				<div>
+					<input class="searchChoose" type="radio" name="search" value="站内搜索" checked="checked"/>&nbsp;站内搜索
+					<input type="radio" name="search" value="网站搜索" />&nbsp;网站搜索
+				</div>
+			</div>
+		</form>
+			<img src="image/logo.jpg" />
+			<ul class="title">
+				<div id="headTitle">
+					<li><a href="#">首页</a></li>
+					<li><a href="#">英语资料</a></li>
+					<li><a href="#">考研资料</a></li>
+					<li><a href="#">学习软件</a></li>
+					<li><a href="#">图书书籍</a></li>
+					<li><a href="#">学习文摘</a></li>
+					<li><a href="#">学习课件</a></li>
+					<li><a href="#">学习教材</a></li>
+					<li><a href="#">学习论坛</a></li>
+				</div>
+			</ul>
+		</div>-->
+		<header id="site-header">
+            <div class="wrapper">
+                 <a href="/" class="logo">
+                 <span>websitename</span>
+                 </a>
+				<form method="get" action="http://www.baidu.com/s">
+					 <input type="text" id="words" name="wd" placeholder="Search">
+				</form>
+			</div>
+		</header>
+        <!--Switch to {language}
+        <nav id="nav-site">
+            <a href="/directory/" title="Browse our software.">Browse</a>
+            <a href="/blog/" title="Read the latest news from the SF HQ.">Blog</a>
+            <a href="/support" title="Contact us for help and feedback.">Help</a>
+        </nav>
+        <nav id="nav-account">
+            
+              <div class="logged_out">
+                <a href="https://sourceforge.net/account/login.php">Log In</a>
+                <span>or</span>
+                <a href="https://sourceforge.net/user/registration">Join</a>
+              </div>
+            
+        </nav>-->
+		<header id="site-sec-header" style="clear:both;">
+			<div class="wrapper">
+				<!-- <nav id="nav-hubs">
+					<h4>Solution Centers</h4>
+					<a href="http://ibmsmartercommerce.sourceforge.net/">Smarter Commerce</a>
+					<a href="http://goparallel.sourceforge.net/">Go Parallel</a>
+					<a href="http://ibmsmarteritservices.sourceforge.net/">Smarter IT</a>
+				</nav>
+				<nav id="nav-collateral">
+					<a href="http://library.geeknetmedia.com">Resources</a>
+					
+					<a href="https://sourceforge.net/user/registration">Newsletters</a>
+					
+				</nav> -->
+				
+					<ul class="title" style="clear:both;">
+						<div id="headTitle">
+							<li><a href="#">首页</a></li>
+							<li><a href="#">英语资料</a></li>
+							<li><a href="#">考研资料</a></li>
+							<li><a href="#">学习软件</a></li>
+							<li><a href="#">图书书籍</a></li>
+							<li><a href="#">学习文摘</a></li>
+							<li><a href="#">学习课件</a></li>
+							<li><a href="#">学习教材</a></li>
+							<li><a href="#">学习论坛</a></li>
+						</div>
+					</ul>
+			</div>
+		</header>
+         <!-- 
+			<ul class="title" style="clear:both;">
+				<div id="headTitle">
+					<li><a href="#">首页</a></li>
+					<li><a href="#">英语资料</a></li>
+					<li><a href="#">考研资料</a></li>
+					<li><a href="#">学习软件</a></li>
+					<li><a href="#">图书书籍</a></li>
+					<li><a href="#">学习文摘</a></li>
+					<li><a href="#">学习课件</a></li>
+					<li><a href="#">学习教材</a></li>
+					<li><a href="#">学习论坛</a></li>
+				</div>
+			</ul> -->
+
+	
+   <div id="main">
+		<!--begin Sidebar-->
+		<div id="sidebar">
+			<div id="recentUpdateRightSec">最近更新</div>
+			<div class="recentUpdateSec">
+				<ul>
+					<MARQUEE DIRECTION="UP"  ONMOUSEOVER="this.stop()"					ONMOUSEOUT="this.start()" HEIGHT=170 scrollamount="1px" behavior="scroll">
+					<li><a href="#">最近更新展示</a></li><hr/>
+					<li><a href="#">最近更新展示</a></li><hr/>
+					<li><a href="#">最近更新展示</a></li><hr/>
+					<li><a href="#">最近更新展示</a></li><hr/>
+					<li><a href="#">最近更新展示</a></li><hr/>
+					</MARQUEE>
+				</ul>
+			</div>
+
+				<div class="mainRight">
+					<div id="recentHotDownload">
+						<ul class="title">
+							<li onmouseover="RecentHotDownloadIn();" onmouseout="RecentHotDownloadOut();">
+								<a href="#">热门下载</font></a></li>
+							<li onmouseover="RecommandHotDownloadIn();" onmouseout="RecommandHotDownloadOut();">
+								<a href="#">推荐下载</a></li>
+							<li>
+								<a href="#">更多>></a></li>
+						</ul>
+					</div>
+					<div id="hotDownload">
+						<p>&nbsp;</p>
+						<ul>
+							<li><a href="#" id="recentHot0">热门下载</a></li><hr/>
+							<li><a href="#" id="recentHot1">热门下载</a></li><hr/>
+							<li><a href="#" id="recentHot2">热门下载</a></li><hr/>
+							<li><a href="#" id="recentHot3">热门下载</a></li><hr/>
+							<li><a href="#" id="recentHot4">热门下载</a></li><hr/>
+							<li><a href="#" id="recentHot5">热门下载</a></li><hr/>
+							<li><a href="#" id="recentHot6">热门下载</a></li><hr/>
+							<li><a href="#" id="recentHot7">热门下载</a></li><hr/>
+							<li><a href="#" id="recentHot8">热门下载</a></li><hr/>
+							<li><a href="#" id="recentHot9">热门下载</a></li><hr/>
+						</ul>
+					</div>
+				</div>
+		</div>
+		<!--end Sidebar-->
+
+	   <!--begin mainlist-->
+			<div class="mainlist">		
+				<div id="mainBlockSec">
+					<ul class="title">
+						<li>
+							<a href="#"><font size="3px" color="rgb(36,95,153)">书籍下载</font></a></li>
+						<li onmouseover="EnglishIn();" onmouseout="EnglishOut();">
+							<a href="#">英语</a></li>
+						<li onmouseover="EnglishIn();" onmouseout="EnglishOut();">
+							<a href="#">考研</a></li>
+						<li onmouseover="EnglishIn();" onmouseout="EnglishOut();">
+							<a href="#">计算机</a></li>
+						<li onmouseover="EnglishIn();" onmouseout="EnglishOut();">
+							<a href="#">心理学</a></li>
+						<li onmouseover="EnglishIn();" onmouseout="EnglishOut();">
+							<a href="#">其它>></a></li>
+					</ul>
+			        <ul class="seachlist">
+							<a class="sansserif">w3school 在线教程</a>
+							<li><a href="#" id="recentHot0"  class="sansserif">w3school 在线教程</a><p> 关于<em>w3school</em> 下面是关于<em>w3school</em>的简要描述： <em>w3school</em>最大的价值在于它提供了一种学习的新方法：学习者在网页上直接阅读文档、查看代码、调试...</p></li><hr/>
+							<li><a href="#" id="recentHot1">热门下载</a></li><hr/>
+							<li><a href="#" id="recentHot2">热门下载</a></li><hr/>
+							<li><a href="#" id="recentHot3">热门下载</a></li><hr/>
+							<li><a href="#" id="recentHot4">热门下载</a></li><hr/>
+							<li><a href="#" id="recentHot5">热门下载</a></li><hr/>
+							<li><a href="#" id="recentHot6">热门下载</a></li><hr/>
+							<li><a href="#" id="recentHot7">热门下载</a></li><hr/>
+							<li><a href="#" id="recentHot8">热门下载</a></li><hr/>
+							<li><a href="#" id="recentHot9">热门下载</a></li><hr/>
+				    </ul>
+			</div>
+		</div>			
+			<!--end mainlist-->
+	</div>
+		<!--end main-->
+
+
+	  <!--start footer-->
+		<footer id="site-footer" style="clear:both;">
+			<div class="wrapper">
+				<nav>
+					<h5>SunnyIT</h5>
+					<a href="/about">About</a>
+					<a href="/blog/category/sitestatus/">Site Status</a>
+					<a href="http://twitter.com/sfnet_ops">etc.</a>
+				</nav>
+				<nav>
+					<h5>Find Doc , Software and vedio</h5>
+					<a href="/create/">Doc</a>
+					<a href="/directory/">Software</a>
+					<a href="/top">vedio</a>
+				</nav>
+				<nav>
+					<h5>Community</h5>
+					<a href="/blog/">Blog</a>
+					<a href="http://twitter.com/sourceforge">Glowdable</a>
+					<a href="/jobs?source=footer">forum</a>
+				</nav>
+				<nav>
+					<h5>friendly link</h5>
+					<a href="http://www.infzm.com/">infzm</a>
+					<a href="http://www.ftchinese.com/">ft</a>
+					<a href="http://www.cn.wsj.com/gb/">wsj</a>
+				</nav>
+			</div>
+		</footer>
+		<footer id="site-copyright-footer">
+			<div class="wrapper">
+				<div id="copyright">
+					Copyright &copy; 2013 SunnyIT. All Rights Reserved.<br />
+					SunnyIT is a <a href="#">Develop.</a> team.
+				</div>
+				<nav style="text-align:left;text-indent: 2em">
+					学习资料库，由广大资源爱好者通过共享互助而共享各种学习资料，大家可以免费下载学习使用，但学习资料库无法保证所共享资料<br/>的完整性和合理性，如果有资料对您的合法权益造成侵害，请立即联系我们处理
+				</nav>
+			</div>
+		</footer>
+				<!-- <div id="footer">
+						学习资料库，由广大资源爱好者通过共享互助而共享各种学习资料，大家可以免费下载学习使用，但学习资料库无法保证所共享<br/>
+						资料的完整性和合理性，如果有资料对您的合法权益造成侵害，请立即联系我们处理<br/>
+				</div> -->
+		</div>	
+			<!--end container-->
+</body>
+<!-- JiaThis Button BEGIN -->
+<script type="text/javascript" src="http://v3.jiathis.com/code/jiathis_r.js?uid=1350829171869172&move=0&amp;btn=r3.gif" charset="utf-8"></script>
+<!-- JiaThis Button END -->
+</html>

@@ -84,6 +84,10 @@ window.onload=function(){
 btnChange('playbtn'); 
 } 
 
+
+
+
+
 function getFocus()
 {
 	var inputText = document.getElementsByName('wd')[0];

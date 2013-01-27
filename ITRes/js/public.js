@@ -80,6 +80,8 @@ imgChange(n);
 } 
 var autokey = true; 
 setInterval("autoChange('playbtn')",3000); 
+
+
 window.onload=function(){ 
 btnChange('playbtn'); 
 } 

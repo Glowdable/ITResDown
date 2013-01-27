@@ -5263,3 +5263,27 @@ window.Modernizr = function(ap, ao, an) {
         return p
     })
 })(window);
+    function a(g) {
+        d("debug", g)
+    }
+    function e(g) {
+        d("info", g)
+    }
+    function c(g) {
+        d("warning", g)
+    }
+    function b(g) {
+        d("error", g)
+    }
+    function f(g) {
+        d("critical", g)
+    }
+    return {
+        log: d,
+        debug: a,
+        info: e,
+        warning: c,
+        error: b,
+        critical: f
+    }
+};

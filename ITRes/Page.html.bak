@@ -9,46 +9,21 @@
 
 <script type="text/javascript" src="js/outer.js" charset="utf-8"></script> <!-- for ie -->
 <script type="text/javascript" src="js/public.js" charset="utf-8"></script>
+<script type="text/javascript" src="js/common.js" charset="utf-8"></script>
 <link rel="stylesheet" href="css/init.css" type="text/css" />
 <link rel="stylesheet" href="css/index.css" type="text/css" />
 
 </head>
 <body>
 	<div id="container">
-		<!--<div id="header">
-		<form method="GET" action="http://www.baidu.com/s">
-			<div id="search">
-				<input  class="searchinput" type="text" name="wd" value="请输入搜索内容" onfocus="getFocus();" />
-				<input  class="searchbt" type="submit" name="serachBt" value="搜索"/>
-				<div>
-					<input class="searchChoose" type="radio" name="search" value="站内搜索" checked="checked"/>&nbsp;站内搜索
-					<input type="radio" name="search" value="网站搜索" />&nbsp;网站搜索
-				</div>
-			</div>
-		</form>
-			<img src="image/logo.jpg" />
-			<ul class="title">
-				<div id="headTitle">
-					<li><a href="#">首页</a></li>
-					<li><a href="#">英语资料</a></li>
-					<li><a href="#">考研资料</a></li>
-					<li><a href="#">学习软件</a></li>
-					<li><a href="#">图书书籍</a></li>
-					<li><a href="#">学习文摘</a></li>
-					<li><a href="#">学习课件</a></li>
-					<li><a href="#">学习教材</a></li>
-					<li><a href="#">学习论坛</a></li>
-				</div>
-			</ul>
-		</div>-->
 		<header id="site-header">
             <div class="wrapper">
                  <a href="/" class="logo">
                  <span>websitename</span>
                  </a>
-            <form method="get" action="http://www.baidu.com/s">
-                 <input type="text" id="words" name="wd" placeholder="Search">
-            </form>
+				<form method="get" action="http://www.baidu.com/s">
+					 <input type="text" id="words" name="wd" placeholder="Search">
+				</form>
 			</div>
 		</header>
         <!--Switch to {language}
@@ -81,17 +56,88 @@
 					
 				</nav> -->
 				
-					<ul class="title" style="clear:both;">
+					<ul id="navigation" style="clear:both;">
 						<div id="headTitle">
-							<li><a href="#">首页</a></li>
-							<li><a href="#">英语资料</a></li>
-							<li><a href="#">考研资料</a></li>
+							<li>
+								<a href="#">首页</a>
+							</li>
+
+							<li onmouseover="displaySubMenu(this)" onmouseout="hideSubMenu(this)"> 
+								<a href="#">计算机基础</a>
+								<ul>
+									<li><a href="#">office教程</a></li>
+									<li><a href="#">硬件组装</a></li>
+									<li><a href="#"> 电脑杂志</a></li>
+								</ul>
+							</li>
+
+							<li onmouseover="displaySubMenu(this)" onmouseout="hideSubMenu(this)"> 
+								<a href="#">操作系统</a>
+								<ul>
+									<li><a href="#">windows</a></li>
+									<li><a href="#">linux</a></li>
+									<li><a href="#">unix</a></li>
+								</ul>
+							</li>
+							
+							<li onmouseover="displaySubMenu(this)" onmouseout="hideSubMenu(this)"> 
+								<a href="#">开发语言</a>
+								<ul>
+									<li><a href="#">asm</a></li>
+									<li><a href="#">c</a></li>
+									<li><a href="#">c++</a></li>
+									<li><a href="#">java</a></li>
+									<li><a href="#">c#</a></li>
+									<li><a href="#">vb</a></li>
+								</ul>
+							</li>
+
+							<li onmouseover="displaySubMenu(this)" onmouseout="hideSubMenu(this)"> 
+								<a href="#">web开发</a>
+								<ul>
+									<li><a href="#">web编程</a></li>
+									<li><a href="#">JSP</a></li>
+									<li><a href="#">ASP</a></li>
+									<li><a href="#">Pathon</a></li>
+									<li><a href="#">Deliph</a></li>
+									<li><a href="#">Ruby</a></li>
+								</ul>
+							</li>
+
+							<li onmouseover="displaySubMenu(this)" onmouseout="hideSubMenu(this)"> 
+								<a href="#">网络技术</a>
+								<ul>
+									<li><a href="#">网络基础</a></li>
+									<li><a href="#">网络设备</a></li>
+									<li><a href="#">网络管理</a></li>
+									<li><a href="#">系统集成</a></li>
+								</ul>
+							</li>
+
+							<li onmouseover="displaySubMenu(this)" onmouseout="hideSubMenu(this)"> 
+								<a href="#">数据库</a>
+								<ul>
+									<li><a href="#">Mysql</a></li>
+									<li><a href="#">Orcale</a></li>
+									<li><a href="#">SQL Server</a></li>
+									<li><a href="#">DB2</a></li>
+									<li><a href="#">Sysbase</a></li>
+									<li><a href="#">Access</a></li>
+								</ul>
+							</li>
+
+							<li onmouseover="displaySubMenu(this)" onmouseout="hideSubMenu(this)"> 
+								<a href="#">其它</a>
+							</li>
+
+
+							<!-- <li><a href="#">考研资料</a></li>
 							<li><a href="#">学习软件</a></li>
 							<li><a href="#">图书书籍</a></li>
 							<li><a href="#">学习文摘</a></li>
 							<li><a href="#">学习课件</a></li>
 							<li><a href="#">学习教材</a></li>
-							<li><a href="#">学习论坛</a></li>
+							<li><a href="#">学习论坛</a></li> -->
 						</div>
 					</ul>
 			</div>
@@ -161,11 +207,13 @@
 					<div id="recentHotDownload">
 						<ul class="title">
 							<li onmouseover="RecentHotDownloadIn();" onmouseout="RecentHotDownloadOut();">
-								<a href="#">热门下载</font></a></li>
+								<a href="#"><font size="3" face="verdana">热门下载</font></a></li>
 							<li onmouseover="RecommandHotDownloadIn();" onmouseout="RecommandHotDownloadOut();">
-								<a href="#">推荐下载</a></li>
-							<li>
-								<a href="#">更多>></a></li>
+								<a href="#"><font size="3" face="verdana">推荐下载</font></a></li>
+										<li onmouseover="EnglishIn();" onmouseout="EnglishOut();">
+								<a href="#"><font size="3" face="verdana">热门下载</font></a></li>
+							<li onmouseover="EnglishIn();" onmouseout="EnglishOut();">
+								<a href="#"><font size="3" face="verdana">推荐下载</font></a></li>
 						</ul>
 					</div>
 					<div id="hotDownload">
@@ -187,7 +235,7 @@
 				<div id="mainBlock">
 					<ul class="title">
 						<li>
-							<a href="#"><font size="3px" color="rgb(36,95,153)">书籍下载</font></a></li>
+							<a href="#"><font size="3" face="verdana">书籍下载</font></a></li>
 						<li onmouseover="EnglishIn();" onmouseout="EnglishOut();">
 							<a href="#">英语</a></li>
 						<li onmouseover="EnglishIn();" onmouseout="EnglishOut();">
@@ -284,11 +332,9 @@
 					<div id="recentHotDownload">
 						<ul class="title">
 							<li onmouseover="EnglishIn();" onmouseout="EnglishOut();">
-								<a href="#">热门下载</font></a></li>
+								<a href="#"><font size="3" face="verdana">热门下载</font></a></li>
 							<li onmouseover="EnglishIn();" onmouseout="EnglishOut();">
-								<a href="#">推荐下载</a></li>
-							<li onmouseover="EnglishIn();" onmouseout="EnglishOut();">
-								<a href="#">更多>></a></li>
+								<a href="#"><font size="3" face="verdana">推荐下载</font></a></li>	
 						</ul>
 					</div>
 						<div id="hotDownload">
@@ -309,7 +355,7 @@
 				</div>
 				<div id="mainBlock">
 					<ul class="title">
-						<li><a href="#"><font size="3px" color="rgb(36,95,153)">视频下载</font></a></li>
+						<li><a href="#"><font size="3" face="verdana">视频下载</font></a></li>
 						<li><a href="#">英语</a></li>
 						<li><a href="#">考研</a></li>
 						<li><a href="#">计算机</a></li>
@@ -355,11 +401,9 @@
 					<div id="recentHotDownload">
 						<ul class="title">
 							<li onmouseover="EnglishIn();" onmouseout="EnglishOut();">
-								<a href="#">热门下载</font></a></li>
+								<a href="#"><font size="3" face="verdana">热门下载</font></a></li>
 							<li onmouseover="EnglishIn();" onmouseout="EnglishOut();">
-								<a href="#">推荐下载</a></li>
-							<li onmouseover="EnglishIn();" onmouseout="EnglishOut();">
-								<a href="#">更多>></a></li>
+								<a href="#"><font size="3" face="verdana">推荐下载</font></a></li>
 						</ul>
 					</div>
 					<div id="hotDownload">
@@ -380,7 +424,7 @@
 				</div>
 				<div id="mainBlock">
 					<ul class="title">
-						<li><a href="#"><font size="3px" color="rgb(36,95,153)">软件下载</font></a></li>
+						<li><a href="#"><font size="3" face="verdana">软件下载</font></a></li>
 						<li><a href="#">英语</a></li>
 						<li><a href="#">考研</a></li>
 						<li><a href="#">计算机</a></li>
